@@ -288,7 +288,7 @@ const Navbar = () => {
         fontSize: "0.85rem",
         fontWeight: 600,
         cursor: "pointer",
-        border: "none",
+
         fontFamily: "'DM Sans', sans-serif",
         transition: "all 0.25s ease",
         background: color === "gold"

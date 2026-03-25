@@ -236,7 +236,7 @@ body::before {
   color: var(--gold-400);
 }
 
-@media print {
+/* @media print {
   body * {
     visibility: hidden;
   }
@@ -259,4 +259,27 @@ body::before {
   .no-print {
     display: none !important;
   }
+} */
+
+@media print {
+
+  body {
+    background: white !important;
+  }
+
+  .resume-container {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .resume-container * {
+    color: black !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
 }

@@ -235,3 +235,24 @@ body::before {
   background: rgba(240, 192, 64, 0.25);
   color: var(--gold-400);
 }
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .resume-container {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .resume-container * {
+    color: black !important;
+  }
+}

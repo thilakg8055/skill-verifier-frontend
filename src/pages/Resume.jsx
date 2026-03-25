@@ -435,7 +435,7 @@ const Resume = () => {
 
     const pageStyle = {
         minHeight: "100vh",
-        padding: "100px 24px 60px",
+        padding: "40px 24px",
         position: "relative",
         overflow: "hidden",
     };
@@ -507,6 +507,15 @@ const Resume = () => {
             document.body.removeChild(textarea);
         }
     };
+    const handleExportPDF = () => {
+        const originalTitle = document.title;
+        document.title = "Resume";
+
+        setTimeout(() => {
+            window.print();
+            document.title = originalTitle;
+        }, 300);
+    };
     return (
         <div style={pageStyle}>
             {/* Orb */}
@@ -531,6 +540,7 @@ const Resume = () => {
                     marginBottom: "16px"
                 }}>
                     <button
+                        className="no-print"
                         onClick={handleCopyLink}
                         style={{
                             padding: "9px 18px",
@@ -547,7 +557,8 @@ const Resume = () => {
                         🔗 Copy Link
                     </button>
                     <button
-                        onClick={() => window.print()}
+                        className="no-print"
+                        onClick={handleExportPDF}
                         style={{
                             padding: "9px 22px",
                             background: "linear-gradient(135deg, #f0c040, #e0a820)",
@@ -562,7 +573,7 @@ const Resume = () => {
                     </button>
                 </div>
 
-                <div style={cardStyle}>
+                <div className="resume-container" style={cardStyle}>
                     {/* Gold top bar */}
                     <div style={{ height: "3px", background: "linear-gradient(90deg, #f0c040, #2dd4bf, #f0c040)" }} />
 

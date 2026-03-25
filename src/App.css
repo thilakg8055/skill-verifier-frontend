@@ -237,22 +237,26 @@ body::before {
 }
 
 @media print {
-  body {
+  body * {
+    visibility: hidden;
+  }
+
+  #resume-content,
+  #resume-content * {
+    visibility: visible;
+  }
+
+  #resume-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: white !important;
+    color: black !important;
+    padding: 20px;
   }
 
   .no-print {
     display: none !important;
-  }
-
-  .resume-container {
-    background: white !important;
-    color: black !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-
-  .resume-container * {
-    color: black !important;
   }
 }

@@ -435,7 +435,7 @@ const Resume = () => {
 
     const pageStyle = {
         minHeight: "100vh",
-        padding: "40px 24px",
+        padding: "20px",
         position: "relative",
         overflow: "hidden",
     };
@@ -573,7 +573,7 @@ const Resume = () => {
                     </button>
                 </div>
 
-                <div className="resume-container" style={cardStyle}>
+                <div id="resume-content" className="resume-container" style={cardStyle}>
                     {/* Gold top bar */}
                     <div style={{ height: "3px", background: "linear-gradient(90deg, #f0c040, #2dd4bf, #f0c040)" }} />
 

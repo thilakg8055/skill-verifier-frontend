@@ -236,7 +236,7 @@ const Navbar = () => {
         right: 0,
         zIndex: 1000,
         padding: "0 2rem",
-        height: "68px",
+        height: "80px",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",

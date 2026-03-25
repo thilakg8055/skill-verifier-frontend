@@ -435,7 +435,7 @@ const Resume = () => {
 
     const pageStyle = {
         minHeight: "100vh",
-        padding: "20px",
+        padding: "120px 24px 60px",
         position: "relative",
         overflow: "hidden",
     };
@@ -552,6 +552,7 @@ const Resume = () => {
                             border: "none",
                             cursor: "pointer",
                             boxShadow: "0 4px 20px rgba(45,212,191,0.25)",
+                            zIndex: 10
                         }}
                     >
                         🔗 Copy Link
@@ -567,6 +568,7 @@ const Resume = () => {
                             borderRadius: "10px", border: "none", cursor: "pointer",
                             boxShadow: "0 4px 20px rgba(240,192,64,0.25)",
                             display: "flex", alignItems: "center", gap: "7px",
+                            zIndex: 10
                         }}
                     >
                         ↓ Export PDF
